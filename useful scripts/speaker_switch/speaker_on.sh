@@ -7,7 +7,7 @@
 #nmcli radio wifi off && sleep 5 && nmcli radio wifi on
 #sudo modprobe -r iwlwifi && sudo modprobe iwlwifi
 
-sleep 2
+sleep 3
 sudo service network-manager restart
 #sudo killall nm-applet
 #sleep 3
