@@ -1,0 +1,617 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta property="og:image:type" content="image/jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="mybodyc">
+        <div class="section sectionpres_blue" id="section-main">
+            <div class="container">
+                <div class="row firstrowc">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-9">
+                        <p class="title01b" id="t1b">TUTORIAL</p>
+                        <p class="title02b" id="t2">SIGN LANGUAGE DIGITS</p>
+                        <p class="my_p title_info">QuickStart to BrainEditor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ForeWord -->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">FOREWORD</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">About the problem</h1>
+                                    <p class="my_ps_cs pcase">
+                                        Sign languages (also known as signed languages) are languages that use manual communication to convey meaning. This can include simultaneously employing hand gestures, movement, orientation of the fingers, arms or body, and facial expressions to convey a speaker's ideas.
+                                    </p>
+
+                                    <p class="my_ps_cs pcase">
+                                        Sign Language Digits Dataset was made by students to learn Convolutional neural network, and can be found on the following link: <a href="https://github.com/ardamavi/Sign-Language-Digits-Dataset" target="_blank">Sign language digits dataset</a>
+                                    </p>
+
+
+                                    <p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th align="center"><img src="./images/tutorials/handsign/0.JPG" style="max-width:100%;"></th>
+                                                    <th align="center"><img src="./images/tutorials/handsign/1.JPG" style="max-width:100%;"></th>
+                                                    <th align="center"><img src="./images/tutorials/handsign/2.JPG" style="max-width:100%;"></th>
+                                                    <th align="center"><img src="./images/tutorials/handsign/3.JPG" style="max-width:100%;"></th>
+                                                    <th align="center"><img src="./images/tutorials/handsign/4.JPG" style="max-width:100%;"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center">0</td>
+                                                    <td align="center">1</td>
+                                                    <td align="center">2</td>
+                                                    <td align="center">3</td>
+                                                    <td align="center">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center"><img src="./images/tutorials/handsign/5.JPG" style="max-width:100%;"></td>
+                                                    <td align="center"><img src="./images/tutorials/handsign/6.JPG" style="max-width:100%;"></td>
+                                                    <td align="center"><img src="./images/tutorials/handsign/7.JPG" style="max-width:100%;"></td>
+                                                    <td align="center"><img src="./images/tutorials/handsign/8.JPG" style="max-width:100%;"></td>
+                                                    <td align="center"><img src="./images/tutorials/handsign/9.JPG" style="max-width:100%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center">5</td>
+                                                    <td align="center">6</td>
+                                                    <td align="center">7</td>
+                                                    <td align="center">8</td>
+                                                    <td align="center">9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <br />
+                                        <b>Details of dataset</b>
+                                        <ul>
+                                            <li>Image size: 100 x 100 pixels</li>
+                                            <li>Color space: RGB</li>
+                                            <li>Number of classes: 10 (Digits: 0-9)</li>
+                                        </ul>
+
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Preparation -->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">Preparation</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">Store the dataset</h1>
+
+                                    <p>
+                                        Download the dataset from the github link above and unzip it.<br />
+                                        There must be 10 folders inside with the name of numbers from 0 to 9.<br />
+                                        Go to the <b>BrainFactory\Images</b> folder and create a new folder with name: <b>hands</b><br />
+                                        Copy the 10 folders into this hands folder.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Theory -->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">THEORY</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">HOW TO SOLVE THE PROBLEM</h1>
+                                    <p class="my_ps_cs pcase">
+                                        Since this is an Image recognition problem, one of the best solution is to use AutoEncoder.
+                                        <br />
+                                        AutoEncoder scales(compresses) down the image data into smaller representation with convolutional layers. In the middle of the net there is (are) one or several dense layers and finally the decoder part scales up the compressed data.
+                                        <img src="./images/tutorials/handsign/netschema.jpg" />
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- BrainFactory -->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">BrainFactory</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">THE FIRST STEP</h1>
+                                    <p class="my_ps_cs pcase">
+                                        Start the <b>SYN_Browser</b>. The editor should look similar like this.<br/> 
+										If the <b>BrainEditor</b> panel is not visible then go to the View menu and select BrainEditor.
+                                        <a href="./images/tutorials/handsign/empty_braineditor_big.jpg" target="_blank"><img src="./images/tutorials/handsign/empty_braineditor_small.jpg" /></a>
+                                        <br /><br />
+                                        In the Brain menu select <b>New</b> and give a new name to the graph (eg.: handsign) when the <b>Enter new graph name</b> dialog appears.<br>
+										After press ok, at the bottom right corner a box appears for few seconds to inform you about the document saving.
+										<br/>
+										<img src="./images/tutorials/handsign/handsingsaved.jpg" />
+                                    </p>
+									
+									<br/>
+									<p style="color:#A00000;font-size:20">
+										Make the <b>Predefined Operations</b> panel visible (if its not). <br/>
+										<b>Just like any other panels, it can be found in the View menu</b>.
+									</p>
+									<br/>
+
+                                    <p>
+                                        <img src="./images/tutorials/handsign/predefinedoperations.jpg" style="margin-right: 25; display:block; float:left" />
+                                        The image size is 100x100 which is not the best for NeuralNetwork to do a division in every layer.<br /><br />
+
+                                        100 will be 50 at the first <b>MaxPool</b> and 25 at the second. Get the half of 25 is not integer and will be 12.<br />
+                                        When <b>Upscaling</b>, 12 will be 24, and 48, and 96. Which is not equals with 100<br /><br />
+
+                                        <b>So the best solution is to crop the original 100x100 image into a 96x96 image</b><br /><br />
+
+                                        <b>BrainEditor</b> has a lot of BuiltIn operations to use. 
+                                        
+                                        <br clear="all" />
+                                    </p>
+									
+									<p>
+										Select the <b>Crop</b> operation from the <b>Predefined Operations</b> menu.<br/>
+										With the mouse left button pressed, drag the <b>Crop</b> from the <b>Predefined Operations</b> to the <b>BrainEditor</b>
+									</p>
+
+
+                                    <p>
+                                        <img src="./images/tutorials/handsign/cropaugmentationadded.jpg" /><br/><br/>
+                                        Most of the <b>operation has Input and Output tensor</b>. Some of them hase more than one. <br />
+                                        <b>Tensors</b> are special data storages to transfer data between operations.<br />
+                                        The Graph workflow runs by these tensors, so <b>tensors must be unique</b><br />
+                                        There are 2 predefined Tensors in the system: <b>Input, InputID.</b>
+                                        <ul>
+                                            <li>Input is the incoming image</li>
+                                            <li>InputID is the Image qunique ID</li>
+                                        </ul>
+                                        <br />
+										
+										<b>Input Tensors</b> are visible on the <b>left side</b> of the operation<br/>
+										<b>Output Tensors</b> are visible on the <b>right side</b> of the operation<br/>
+										
+										<br/>
+										The <b>Crop operation</b> has 1 Input tensor(<b>CropInput0</b>) and 1 Output Tensor(<b>CropOutput0</b>)
+										<br/>
+										Click in the CropInput0, and rename it to Input. <br/>
+										As the input started, the program gives you hints about the available tensor names.
+										<br/>
+										<img src="./images/tutorials/handsign/cropinputtensorrenamed.jpg" />
+										
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Images -->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">IMAGES</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">IMPORTING IMAGES TO WORK</h1>
+                                    <p>
+                                        To load images use the<b>Load image folder in the Data menu</b><br />
+                                        In the dialog window open the foldertree until the <b>hands</b> folder is visible. (if no hands directory found, go back to the <b>Foreword</b> section).<br />
+                                        Select hands, and press the OK button.<br />
+                                        <img src="./images/tutorials/handsign/selectimages.jpg" /><br />
+                                        Using this method, all images in the hands folder (including subfolders) are loaded into the memory.
+                                        <br /><br />
+                                    </p>
+
+                                    <p>
+                                        <img src="./images/tutorials/handsign/imagesflyout.jpg" style="margin-left: 25; display:block; float:right" />
+										Open the <b>Images List</b> panel (if its not visible) from the <b>View</b> menu.<br/>
+										This list contains all the loaded images.<br/>
+										
+										Select an image with the mouse. Later either select an image with mouse or if this panel is the active panel you can use up and down buttons<br/><br/>
+
+                                        <b>This selected image will be the working image during the graph build.</b><br /><br />
+
+                                        <br clear="all" />
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crop-->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">Crop</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">CROP the image</h1>
+                                    <p>
+										Make the <b>Tensor Input</b> and <b>Tensor Output</b> panels visible from the <b>View</b> menu<br/>
+                                        
+                                        <a href="./images/tutorials/handsign/cropaugmentation_big.jpg" target="_blank"><img src="./images/tutorials/handsign/cropaugmentation_small.jpg" /></a>
+                                        <br /><br />
+                                        The input image is visible, showing the image size in pixel (100x100)<br />
+                                        Since there are no crop regions in this operation, no output image is visible.<br /><br />
+
+                                        <b>Lets create a crop region</b><br /><br />
+
+                                        Right click on the image, and select <b>Add ROI.</b><br />
+                                        <img src="./images/tutorials/handsign/cropadd.jpg" />
+
+                                        <br /><br />
+                                        A new crop region added. You can add as many as need, but now 1 is enough.<br />
+                                        The network requires a 96x96 image. At the top left corner of the crop selection there is an input box<br />
+                                        Enter value:<b>2;2;96;96</b> and press ENTER<br />
+										This means the crop topleft coordinate is x:2, y:2, and the width:96, height:96
+                                        <img src="./images/tutorials/handsign/cropinput.jpg" /><br /><br />
+										
+										The 0 ath the bottom right corner is the index of this crop region. <br>
+										<b>It is a zero based index.</b><br/>
+										<br/>
+										As the Enter pressed, the <b>Tensor Output</b> refresshed and shows the 96x96 size image.
+										<br/><br/>
+										
+                                        This is the final screen should look something like this
+                                        <a href="./images/tutorials/handsign/cropaugmentation_final_big.jpg" target="_blank"><img src="./images/tutorials/handsign/cropaugmentation_final_small.jpg" /></a>
+                                        <br /><br />
+                                        The Inputs section shows the input image of the operation with dimension 100x100.<br />
+                                        The Outputs section shows the output result image of the operation with dimension 96x96
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- NN setup-->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">SETUP</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">SET NEURAL NETWORK PROPERTIES</h1>
+                                    <p>
+                                        Next add a <b>Neural Network</b> operation to the Graph.<br />
+										This time use an another way to do this<br />
+										Clik in the BrainEditor on an empty place<br/>
+										An input box appears. Click in it, and start to type Neural Network<br/>
+										The program gives you possibilities about the available operations.<br/>
+										Select <b>Neural Network</b><br/>
+										<a href="./images/tutorials/handsign/addneuralnetwork_big.jpg" target="_blank"><img src="./images/tutorials/handsign/addneuralnetwork_small.jpg" /></a>
+										<br/><br/>
+										<img src="./images/tutorials/handsign/neuralnetworkadded.jpg" />
+										<br/><br/>
+
+										
+                                        From the View menu make the <b>Neural Network Editor</b> panel visible<br />
+                                        The empty Model Layer editor should be visible:
+                                        <a href="./images/tutorials/handsign/emptymodellayereditor_big.jpg" target="_blank"><img src="./images/tutorials/handsign/emptymodellayereditor_small.jpg" /></a>
+                                        <br /><br />
+                                        In this dialog the encoder, decoder and centerneuron layers will be build<br />
+                                        <br />
+
+                                    </p>
+
+                                    <p>
+                                        <img src="./images/tutorials/handsign/encoder.jpg" style="margin-left: 25; display:block; float:right" />
+                                        Right click in the center of Encoder window and select <b>Add New</b><br /><br />
+                                        A Kernel input appears with default values.<br/>
+										Change the <b>Number of filters</b> to 8.<br />
+										Leave the other values unchanged<br/><br />
+                                        Add 4 more layer input with the Add new options<br /><br />
+                                        As you see, the <b>Number of filters</b> multiplies by 2 every addition. <br />
+                                        <br clear="all" />
+                                    </p>
+
+                                    <p>
+                                        <img src="./images/tutorials/handsign/decoder.jpg" style="margin-right: 25; display:block; float:left" />
+                                        In the decoder check <b>Use decoder</b> <br /><br />
+                                        Add 4 layer input with Number of Filter values 64, 32, 16, 8 in order top to bottom
+                                        <br clear="all" />
+                                    </p>
+
+                                    <p>
+                                        <img src="./images/tutorials/handsign/centerneurons.jpg" style="margin-left: 25; display:block; float:right" />
+                                        The CenterNeurons block remains empty.
+                                        <br clear="all" />
+                                    </p>
+
+                                    <p>
+                                        <img src="./images/tutorials/handsign/classifiernames.jpg" style="margin-right: 25; display:block; float:left" />
+                                        In the ClassifierNames check <b>Use classifier</b> <br /><br />
+                                        Leave the <b>BinaryCrossEntropy</b> as it is<br /><br />
+                                        In the input box enter number from 0 to 9 line by line.<br />
+                                        <br clear="all" />
+                                    </p>
+
+                                    <p>
+                                        This screen should look like this:
+                                        <a href="./images/tutorials/handsign/model_big.jpg" target="_blank"><img src="./images/tutorials/handsign/model_small.jpg" /></a>
+                                        <br /><br /><br /><br />
+                                        <b>PRESS THE UPDATE CHANGES BUTTON</b> at the botom right of <b>Neural Network Editor</b> panel.
+										<br /><br /><br /><br />
+                                    </p>
+									
+									
+									<p>
+										Change back to the <b>Braineditor</b> panel.<br/>
+										The <b>Crop</b> and the <b>Neural Network</b> MUSTB BE CONNECTED to execute the graph.
+										Clik in the <b>Neural Network</b> operation input tensor (<b>CntkNeuralNetworkInput0</b>) and rename it to <b>CropOutput0</b><br>
+										The program automatically connects the endpoints<br/>
+										<img src="./images/tutorials/handsign/cropconnectneuralnetwork.jpg"/>
+									</p>
+									
+									<p>
+										When the connection has made, the system automatically executes the graph till the selected operation which is NeuralNetwork.<br/>
+										Now it is Red and inform about execution failure.<br/>
+										This is because there are some parameters with wrong values, so currently DO NOT care about this.<br/>
+										<img src="./images/tutorials/handsign/errordonotcare.jpg"/>
+									</p>
+									
+									<p>
+									<img src="./images/tutorials/handsign/nnoperationproperties.jpg" style="margin-right: 25; display:block; float:right" />
+										From the View menu open the <b>Operation Properties</b> panel.<br/><br/>
+										Let the device value 0<br/><br/>
+										Set the NetworkFile to <b>handsmodel</b>.<br/>
+										This file will contain the result of the network training.<br/><br/>
+										Set the OutputMultiplication to 255.<br/> 
+										The network works with numbers in range 0-1 but the RGB images are in range 0-255.<br/><br/>
+										Currently do not change anything else<br/>
+										<br clear="all" />
+									</p>
+									
+									<p>
+										In the <b>Neural Network</b> operation click on <b>Add Tensor +</b><br/>
+										Rename the upper output tensor to <b>AutoEncoder</b><br/>
+										Rename the lower output tensor to <b>Classifier</b><br/>
+										<img src="./images/tutorials/handsign/nnoperationfinal.jpg"/>
+									</p>
+
+
+                                    <p>
+                                        The following screen should be visible:<br />
+                                        <a href="./images/tutorials/handsign/cntk_big.jpg" target="_blank"><img src="./images/tutorials/handsign/cntk_small.jpg" /></a>
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Training-->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">TRAINING</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">TRAIN THE NEURAL NETWORK</h1>
+                                    <p>
+                                        From the View menu select <b>Training</b><br>
+										Uncheck <b>Validation, Calculate thresholds and Delete generated files</b><br/><br/>
+										
+										Press <b>Start train</b><br/><br/>
+										
+										First all image files are generated, after that the network starts to train.<br/>
+										
+                                        <a href="./images/tutorials/handsign/duringtrain_big.jpg" target="_blank"><img src="./images/tutorials/handsign/duringtrain_small.jpg" /></a>
+                                    </p>
+
+                                    <p>
+                                        The training can be stopped anytime by pressing the <b>STOP train</b> button
+                                    </p>
+
+                                    <p>
+                                        Go back to the <b>BrainEditor</b> panel and <b>select another image</b> from the images panel.<br />
+                                        <a href="./images/tutorials/handsign/aftertrain_big.jpg" target="_blank"><img src="./images/tutorials/handsign/aftertrain_small.jpg" /></a>
+                                    </p>
+
+                                    <p>
+                                        The output window is blurry, which is the result of the AutoEncoder in the Neural Network.<br /><br />
+
+                                        In the <b>Tensor Output</b> panel there are 2 possible outputs of this operation (next to the blurry hand).<br />
+                                        <b>Autoencoder and Classifier</b><br />
+                                        <b>Autoencoder</b> is 96x96 image, the result of AutoEncoder.<br />
+                                        <b>Classifier</b> is a 10x1 image, the result of the classification<br />
+                                        <img src="./images/tutorials/handsign/classestensor.jpg" /><br />
+
+                                        The Classes output is a black image with one white point, which is the index of result of the image
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Argmax -->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">RESULT</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">GET THE RESULT OF NEURAL NETWORK</h1>
+                                    <p>
+                                        Add an <b>Arg Max</b> operation to the graph using either the Drag&Drop from the <b>Predefined opertions</b> or just simply clik in an empty area of the <b>BrainEditor</b>.<br/>
+										This operation gets the index of an array, where the biggest value is.<br /><br/>
+										
+										If the new operation is out of the visible area use the mouse right button to drag the <b>BrainEditor canvas</b><br/>
+										Just simply right click in an empty palce, hold the button down and drag.<br/>
+										<br/>
+										
+										To zoom in and out use the <b>MOUSEWHEEL</b><br/><br/>
+										
+										Now the <b>Arg Max</b> input must be the same as the <b>Neural Network Classifier</b> output<br/><br/>
+										
+										There is a little ellipse next to the <b>Classifier</b> output tensor.<br/>
+										Click on it, hold the mouse button down and connect with the <b>Arg Max</b> input tensor<br/>
+										<img src="./images/tutorials/handsign/connectArgmax.jpg" /><br />
+										
+
+                                        Select the Arg Max operation. In the properties window fill the <b>StringOutputs</b> collection with the followings:<br />
+                                        <b>Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine</b><br />
+                                        Click on the dropdown menu next to <b>StringOutputs</b><br />
+										Click on <b>Add</b> button, and set the <b>Item</b> value to Zero<br />
+										<img src="./images/tutorials/handsign/argmaxproperties.jpg" /><br />
+										Repeat the Add step from zero to nine<br/>
+										<img src="./images/tutorials/handsign/argmaxpropertiesfinal.jpg" /><br />
+                                    </p>
+
+                                    <p>
+                                        Select another image and the following screen should be visible (depending on the selected image):<br />
+                                        <a href="./images/tutorials/handsign/argmax_big.jpg" target="_blank"><img src="./images/tutorials/handsign/argmax_small.jpg" /></a>
+                                    </p>
+
+                                    <p>
+                                        Click on some images to see different results.<br />
+                                    </p>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Puttext -->
+        <div class="section sectionclients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3 class="heading3 text-left">SHOWTIME</h3>
+                                </div>
+                                <div class="col-md-7">
+                                    <h1 class="header1">SHOW THE RESULT OF NEURAL NETWORK</h1>
+                                    <p>
+                                        Add a <b>Put Text</b> operation to the graph. This operation puts a text on an image<br />
+                                        The first input tensor must be Input, since we want to put the text on the original input image<br />
+										The second input tensor is the string to be visible on the image<br/>
+                                        
+
+                                        In the Propeties window change the <b>Color to black</b>. This is the color of the text.<br />
+                                        Set the Position to: 2,20<br />
+                                    </p>
+                                    <p>
+                                        The following screen should be visible (depending on the selected image):<br />
+                                        <a href="./images/tutorials/handsign/puttext_big.jpg" target="_blank"><img src="./images/tutorials/handsign/puttext_small.jpg" /></a>
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </body>
+</html>
