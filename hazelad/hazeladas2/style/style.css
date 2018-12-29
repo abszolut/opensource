@@ -7285,7 +7285,7 @@ p.title01b {
 p.title02b {
     font-family: BlenderProThin, Arial;
     font-size: 72px;
-    color: #4e779c;
+    color: #ffcc00;
     line-height: 53px;
     margin-top: -17px;
     z-index:1;
@@ -7329,8 +7329,8 @@ p#t1:before {
 p#t1b:before {
     content: '';
     width: 290px;
-    height: 44px;
-    background: rgba(148, 189, 218, 0.8);
+    height: 0px;
+    background: rgba(48, 147, 21, 0.5);
     position: absolute;
     margin-top: 21px;
     margin-left: -3px;
